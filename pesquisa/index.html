@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1 id="title">Rick and Morty</h1>
+    <p id="description">Test your knowledge of Rick and Morty in the quiz below</p>
+    <br>
+    <br>
+    <form id="survey-form">
+
+        <fieldset>
+            <label for="name" id="nome-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="email" id="email-label">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <label for="number" id="number-label">Age (optional)</label>
+            <input type="number" name="age" id="number" min="14" max="99" placeholder="Enter your age">
+        </fieldset>
+        <br>
+        <br>
+
+        <h2>HOW MUCH DO YOU KNOW?</h2>
+    
+        <fieldset>
+        
+            <p>Pickle Rick os a tribute to an episode of Breaking Bad!</p>
+            <label for="true"><input type="radio" id="true" name="input-radio" value="True" class="inline" checked>  True</label>
+            <label for="false"><input type="radio" id="false" name="input-radio" value="False" class="inline">  False</label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <p>Mark all Rick's catchphrases</p>
+
+            <label for=""><input type="checkbox" class="inline" name="type-chekcbox" value="Wubba lubba dub-dub">  Wubba lubba dub-dub</label>
+
+            <label for=""><input type="checkbox" class="inline" name="type-chekcbox" value="Eat my shorts">Eat my shorts</label>
+
+            <label for=""><input type="checkbox" class="inline" name="type-chekcbox" value="Rubber baby bubby bunkers">  Rubber baby bubby bunkers</label>
+
+            <label for=""><input type="checkbox" class="inline" name="type-chekcbox" value="Scooby-dooby-doo">  Scooby-dooby-doo</label>
+
+            <label for=""><input type="checkbox" class="inline" name="type-chekcbox" value="Sufferin'succotash">  Sufferin'succotash</label>
+
+            <label for=""><input type="checkbox" class="inline" name="type-chekcbox" value="And that's the wayyyyy the news goes">  And that's the wayyyyy the news goes</label>
+
+            <label for=""><input type="checkbox" class="inline" name="type-chekcbox" value="Woobwwobwoobwoobwoob">  Woobwwobwoobwoobwoob</label>
+        </fieldset>
+        <br>
+
+
+        <fieldset>
+            <label for="dropdown">Favorite side character
+            <br>
+                <select name="dropdown" id="dropdown">
+                    <option value="">(Select one)</option>
+                    <option value="1">Squanchy</option>
+                    <option value="2">Birdperson</option>
+                    <option value="3">Tammy</option>
+                    <option value="4">Mr Poopybutthole</option>
+                    <option value="5">Gearhead</option>
+                </select>
+            </label>
+         </fieldset>
+<br>
+         <fieldset>
+            <label for="opinion">Now tell me what is your favorite episode:<textarea name="opinion" id="opinion" cols="15" rows="5" placeholder="My favortie episode is..."></textarea></label>
+         </fieldset>
+         <input type="submit" value="Submit" />
+    </form>
+    
+</body>
+</html>

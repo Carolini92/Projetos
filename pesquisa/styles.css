@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+
+
+:root {
+    --cor1: #88bd3e88;
+    --cor2: #5FD43B;
+    --cor3: #38C946;
+    --cor4: #0037378c;
+
+    font-family: 'Rubik Marker Hatch', cursive;  
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    background: #3737;
+    background-image: url(rick-morty-do-mal1.jpg);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  h1 {
+    font-family: 'Rubik Marker Hatch', cursive;
+    margin: 0 auto;
+    padding: 10px 200px;
+    text-align: center;
+    color: #003737;
+  }
+
+#description {
+    text-align: center;
+    color: #003737;
+    font-weight: bold;
+  }
+
+p {
+    margin: 0 auto;
+    text-align: justify;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+
+form {
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--cor4);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+fieldset {
+    border: 0;
+    padding: 10px 5px;
+    border-bottom: 3px transparent var(--cor4);
+  }
+
+label {
+    display: block;
+    margin: 15px 2px 5px 2px;
+    color: whitesmoke;
+}
+
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    color: whitesmoke;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 0;
+    padding: 2px 0;
+    margin-top: 10px;
+    min-height: 2em;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    color: #ffffff;
+}
+
+input::placeholder {
+    padding-left: 5px;
+    color: grey;
+}
+
+.inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;  
+ 
+ }
+
+input[type="submit"] {
+    border: 2px solid black;
+    margin: 20px 40px;
+    padding: 10px 20px;
+    border-radius: 500px;
+    width: 350px;
+    background-color: whitesmoke;
+    color: var(--cor3);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+textarea::placeholder {
+    padding-left: 5px;
+    color: grey;
+}
+
